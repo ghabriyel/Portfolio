@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #2e003e; 
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #c39bd3;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: #2e003e;
+            padding: 15px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .project-card h3 {
+            margin: 10px 0;
+            color: #c39bd3;
+        }
+
+        footer {
+            background-color: #2e003e;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="omai.jpg" alt="Gabriel Ilano" class="profile-picture">
+        <p>Gabriel Ilano</p>
+        <p>Educational Background:</p>
+        <p>Studying BSIT 2022 - Present at Philippine Christian University</p>
+        <p>Skills:</p>
+        <p>PHP, JAVA, C#, CSS, HTML, SQL</p>
+        <p>Language im studying:</p>
+        <p>KOTLIN, JAVASCRIPT, LAVAREL</p>
+    </section>
+    <style>
+        .profile-picture{
+            width: 150px;
+            height: 150px; 
+            border-radius: 50%; 
+            object-fit: cover;
+            margin: 20px auto;
+            display:block;
+        }
+
+    </style>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <div class="image-container" style="display: flex; gap: 10px; justify-content: center;">
+                    <img src="Port1.png" alt="Mock Capstone" class="project-image">
+                    <img src="Port2.png" alt="Additional Image for Project" class="project-image">
+                </div>
+                <h3>Integrative Project(Backend development)</h3>
+                <p>Status:ongoing</p>
+                <p>a web system project which targets to promote transparancy of LGU to the community</p>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+        
+        .project-image {
+            width: 100px; 
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s ease, width 0.3s ease; 
+        }
+    
+      
+        .project-card:hover .project-image {
+            width: 300px; 
+            transform: scale(1.1); 
+        }
+    </style>
+
+    <section id="contact">
+        <h2>Contacts</h2>
+        <p>Email: g.ilano1211@gmail.com</p>
+        <p>Phone: 09260517092</p>
+    </section>
+</body>
+</html>
